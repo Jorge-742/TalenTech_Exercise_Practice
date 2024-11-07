@@ -81,3 +81,11 @@ INSERT INTO prestamos (id_usuario, id_libro, fecha_prestamo, fecha_devolucion)
     	(1, 1, '2024-08-01', '2024-08-15'),
         (2, 2, ' 2024-08-02', '2024-08-16');
 --------------------------------------------------------------------------------------------
+--- Crea la tabla relacionada 'Prestamos_usuarios', con sus campos, llave primaria y llaves foranéas. Ello le permite relacionar la información de diferentes tablas.
+CREATE TABLE Prestamos_usuarios (
+	id_prestamo_usuario INT PRIMARY kEY AUTO_INCREMENT,
+	id_prestamo INT NOT NULL,
+	Id_usuario INT NOT NULL,
+	FOREIGN KEY (id_prestamo) REFERENCES prestamos (id_prestamo),
+	FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario)
+);
