@@ -52,3 +52,17 @@ INSERT INTO libros (titulo, id_autor, id_categoria, año_publicacion)
 		('Harry Potter y la Piedra Filosofal', 2, 3, 1997),
 		('1984', 3, 2, 1949);
 --------------------------------------------------------------------------------------------
+--- Crea la tabla 'Usuarios' y demás elementos.
+CREATE TABLE Usuarios (
+    	id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+	nombre VARCHAR(100) NOT NULL,
+	direccion VARCHAR(225) NOT NULL,
+	telefono INT(20));
+
+--- Inserta datos en los campos de la tabla 'Usuarios'.
+INSERT INTO usuarios (nombre, direccion, telefono)
+	VALUES
+    	('Carlos Martínez', 'Calle Luna, 123', '123456789'),
+        ('Lucía Fernández', 'Avenida Sol, 456', ' 987654321');
+--------------------------------------------------------------------------------------------
+
