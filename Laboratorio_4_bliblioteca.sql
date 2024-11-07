@@ -34,3 +34,21 @@ INSERT INTO categorias (nombre_categoria)
 		('Fantasía'),
 		('Ensayo');
 -------------------------------------------------------------------------------------------
+--- Crea la tabla 'Libros' con sus campos, tipos de datos, llave primaria y llave foranéa.
+CREATE TABLE Libros (
+	id_libro INT PRIMARY KEY AUTO_INCREMENT,
+	titulo VARCHAR(225) NOT NULL,
+    	id_autor INT,
+    	id_categoria INT,
+	FOREIGN KEY (id_autor) REFERENCES Autores (id_autor),
+	FOREIGN KEY (id_categoria) REFERENCES Categorias (id_categoria),
+	año_publicacion INT,
+	disponible BOOLEAN DEFAULT TRUE);
+
+--- Inserta datos en los campos de la tabla 'Libros'.
+INSERT INTO libros (titulo, id_autor, id_categoria, año_publicacion)
+	VALUES
+		('Cien Años de Soledad', 1, 1, 1967),
+		('Harry Potter y la Piedra Filosofal', 2, 3, 1997),
+		('1984', 3, 2, 1949);
+--------------------------------------------------------------------------------------------
