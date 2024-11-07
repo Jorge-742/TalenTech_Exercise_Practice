@@ -65,4 +65,19 @@ INSERT INTO usuarios (nombre, direccion, telefono)
     	('Carlos Martínez', 'Calle Luna, 123', '123456789'),
         ('Lucía Fernández', 'Avenida Sol, 456', ' 987654321');
 --------------------------------------------------------------------------------------------
+--- Crea la tabla 'Prestamos' y demás elementos.
+CREATE TABLE Prestamos (
+	id_prestamo INT PRIMARY KEY AUTO_INCREMENT,
+	id_usuario INT,
+	id_libro INT,
+	fecha_prestamo DATE,
+	fecha_devolucion DATE,
+	FOREIGN KEY (id_usuario) REFERENCES Usuarios (id_usuario),
+	FOREIGN KEY (id_libro) REFERENCES Libros (id_libro));
 
+--- Inserta datos en los campos de la tabla 'Prestamos'.
+INSERT INTO prestamos (id_usuario, id_libro, fecha_prestamo, fecha_devolucion)
+	VALUES
+    	(1, 1, '2024-08-01', '2024-08-15'),
+        (2, 2, ' 2024-08-02', '2024-08-16');
+--------------------------------------------------------------------------------------------
