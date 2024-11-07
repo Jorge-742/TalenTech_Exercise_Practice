@@ -20,3 +20,17 @@ INSERT INTO autores (nombre, nacionalidad, fecha_nacimiento)
         ('George Orwell', 'Británica', '1903-06-25');
 
 -------------------------------------------------------------------------------------------
+
+--- Crea la tabla 'Categorias' y demás elementos.
+CREATE TABLE Categorias (
+	id_categoria INT PRIMARY KEY AUTO_INCREMENT,
+	nombre_categoria VARCHAR(100) NOT NULL);
+
+--- Inserta datos en los campos de la tabla 'Categorias'
+INSERT INTO categorias (nombre_categoria)
+	VALUES
+    		('Novela'),
+		('Ciencia Ficción'),
+		('Fantasía'),
+		('Ensayo');
+-------------------------------------------------------------------------------------------
