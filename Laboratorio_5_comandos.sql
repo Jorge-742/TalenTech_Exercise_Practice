@@ -47,3 +47,8 @@ WHERE salario > 7000000;
 UPDATE empleados
 SET salario = 6500000
 WHERE nombre = 'Ana Gómez';
+
+--- Elimina el registro del empleado Luis Castro
+DELETE 
+FROM empleados
+WHERE nombre = 'Luis Castro';
