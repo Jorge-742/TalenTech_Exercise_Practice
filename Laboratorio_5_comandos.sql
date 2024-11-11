@@ -94,3 +94,13 @@ FROM autores;
 SELECT *
 FROM libros
 WHERE id_autor = 1;
+
+--- Vista de libro devueltos en el mes 8 del año 2024
+--- Solución 1
+SELECT *
+FROM prestamos
+WHERE fecha_devolucion BETWEEN '2024-08-01' AND '2024-08-30';
+--- solución 2
+SELECT * 
+FROM Prestamos
+WHERE MONTH(Fecha_Devolucion) = 8 AND YEAR(Fecha_Devolucion) = 2024;
