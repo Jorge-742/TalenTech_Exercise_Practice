@@ -42,3 +42,8 @@ FROM cargos;
 SELECT *
 FROM empleados
 WHERE salario > 7000000;
+
+--- Actualiza el salario de Ana Gómez de 6000000 a 6500000.
+UPDATE empleados
+SET salario = 6500000
+WHERE nombre = 'Ana Gómez';
