@@ -37,3 +37,8 @@ INSERT INTO cargos (nombre_cargo, salario)
 --- Selecciona todos los campos de la tabla cargos.
 SELECT * 
 FROM cargos;
+
+--- Selecciona a los empleados que ganan más de 7000000.
+SELECT *
+FROM empleados
+WHERE salario > 7000000;
