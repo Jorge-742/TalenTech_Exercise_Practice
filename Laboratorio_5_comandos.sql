@@ -31,3 +31,9 @@ INSERT INTO cargos (nombre_cargo, salario)
         ('Asistente', 250000),
         ('Desarrollador', 400000);
 -----------------------------------------------------------------
+
+--- Consultas y actualizaciones de la base de datos empresa.
+
+--- Selecciona todos los campos de la tabla cargos.
+SELECT * 
+FROM cargos;
