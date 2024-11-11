@@ -63,3 +63,7 @@ INSERT INTO empleados(nombre, cargo, salario)
 	VALUES
 		('Marta López', 'Asistente', 3000000)
 ----------------------------------------------------------------
+
+
+--- Parte 2. Modificación de la base de datos biblioteca
+USE biblioteca;
