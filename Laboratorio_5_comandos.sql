@@ -77,3 +77,7 @@ WHERE id_libro = 1;
 UPDATE prestamos
 SET fecha_devolucion = '2024-08-30'
 WHERE id_prestamo = 1;
+
+--- Eliminación de un libro de la base de datos
+DELETE FROM libros
+WHERE id_libro = 3;
