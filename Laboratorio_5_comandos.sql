@@ -57,3 +57,9 @@ WHERE nombre = 'Luis Castro';
 SELECT * 
 FROM empleados
 WHERE cargo = 'Desarrollador';
+
+--- Agregación de un nuevo empleado
+INSERT INTO empleados(nombre, cargo, salario)
+	VALUES
+		('Marta López', 'Asistente', 3000000)
+----------------------------------------------------------------
