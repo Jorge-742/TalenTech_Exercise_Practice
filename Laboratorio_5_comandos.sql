@@ -72,3 +72,8 @@ USE biblioteca;
 UPDATE libros
 SET disponible = FALSE
 WHERE id_libro = 1;
+
+--- Actualización de la fecha de devolución de un préstamo
+UPDATE prestamos
+SET fecha_devolucion = '2024-08-30'
+WHERE id_prestamo = 1;
