@@ -52,3 +52,8 @@ WHERE nombre = 'Ana Gómez';
 DELETE 
 FROM empleados
 WHERE nombre = 'Luis Castro';
+
+--- Selecciona los registros de la tabla empleados en el cual el empleado tenga como cargo desarrollador.
+SELECT * 
+FROM empleados
+WHERE cargo = 'Desarrollador';
