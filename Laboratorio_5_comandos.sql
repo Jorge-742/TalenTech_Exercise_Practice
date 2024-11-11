@@ -85,3 +85,7 @@ WHERE id_libro = 3;
 --- Selección de todos los libros 
 SELECT *
 FROM libros;
+
+--- Selección de todos los autores
+SELECT *
+FROM autores;
