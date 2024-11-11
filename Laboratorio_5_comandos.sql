@@ -67,3 +67,8 @@ INSERT INTO empleados(nombre, cargo, salario)
 
 --- Parte 2. Modificación de la base de datos biblioteca
 USE biblioteca;
+
+--- Actualización de la disponibilidad de un libro
+UPDATE libros
+SET disponible = FALSE
+WHERE id_libro = 1;
