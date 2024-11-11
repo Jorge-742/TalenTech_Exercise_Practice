@@ -89,3 +89,8 @@ FROM libros;
 --- Selección de todos los autores
 SELECT *
 FROM autores;
+
+--- Selección del libro de Gabriel García Marquéz
+SELECT *
+FROM libros
+WHERE id_autor = 1;
